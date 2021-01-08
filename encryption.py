@@ -29,12 +29,12 @@ def decrypt(password):
 def master_key(master):
     hash_object = hashlib.sha256(master)
     hex_dig = hash_object.hexdigest()
-    if hex_dig == 'ENTER MASTER KEY HASH HERE':
+    if hex_dig == 'ENTER MASTER KEY HASH':
         return True
 
 
 def master_pin(pin):
     hash_object = hashlib.sha256(pin)
     hex_dig = hash_object.hexdigest()
-    if hex_dig == 'ENTER MASTER PIN HASH HERE':
+    if hex_dig == 'ENTER MASTER PIN HASH':
         return True
